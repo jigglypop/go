@@ -9,6 +9,11 @@ type House struct {
 	Type string
 }
 
+type Phone struct {
+	Num int
+	name string
+}
+
 func main() {
 	var house House
 	house.Address = "서울시"
@@ -16,19 +21,26 @@ func main() {
 	house.Size = 28
 	house.Type = "아파트"
 
-	fmt.Println("주소: ", house.Address)
-	fmt.Println("가격: ", house.Price)
-	fmt.Println("크기: ", house.Size)
-	fmt.Println("타입: ", house.Type)
+	// fmt.Println("주소: ", house.Address)
+	// fmt.Println("가격: ", house.Price)
+	// fmt.Println("크기: ", house.Size)
+	// fmt.Println("타입: ", house.Type)
 
-	fmt.Println(house)
+	// fmt.Println(house)
 
-	house2 := House{
-		"대전시",
-		20,
-		9.6,
-		"빌라",
-	}
+	// house2 := House{
+	// 	"대전시",
+	// 	20,
+	// 	9.6,
+	// 	"빌라",
+	// }
 	
-	fmt.Println(house2)
+	// fmt.Println(house2)
+	phone := Phone {
+		name: "이름",
+		Num: 1,
+	}
+
+	fmt.Println(phone.name)
+	fmt.Println(phone.Num)
 }
